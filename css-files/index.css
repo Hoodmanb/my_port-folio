@@ -1,0 +1,138 @@
+ * {
+     padding: 0;
+     margin: 0;
+     text-decoration: none;
+ }
+
+ body {
+     background-color: rgb(30, 34, 53);
+     color: rgb(194, 183, 183);
+     font-family: 'Open Sans', sans-serif;
+     position: relative;
+     max-width: 100%;
+     text-align: center;
+     font-weight: bold;
+ }
+
+ .section-1 {
+     width: 90%;
+     margin: auto;
+
+ }
+
+ .nav-bar {
+     display: flex;
+     justify-content: space-between;
+     /* margin: 40px;*/
+     margin-top: 6em;
+     margin-bottom: 2em;
+     font-size: 900;
+ }
+
+ .period {
+     color: gold;
+     margin: 0;
+     padding: 0;
+ }
+
+ .name-and-handle {
+     text-align: left;
+ }
+
+ .name-and-handle h1 {
+     margin-bottom: 1.2em;
+ }
+
+ hr {
+     width: 20%;
+     color: goldenrod;
+     background-color: goldenrod;
+     height: 2px;
+     border: none;
+     border-radius:5px ;
+ }
+ .links{
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+ }
+ button{
+    width: 35%;
+    height: 3em;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .material-icons {
+     size: 35px;
+     margin: auto;
+     border: 2.5px solid black;
+     border-radius: 5px;
+ }
+
+ /* Style for the custom dropdown */
+ .custom-dropdown {
+     border: 1px solid white;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ .custom-dropdown:active {
+     border: 1px solid gold;
+     border-radius: 5px;
+
+ }
+
+
+ /* Style for the dropdown options */
+ .custom-dropdown-options {
+     display: none;
+     position: absolute;
+     width: 60%;
+     background-color: #f9f9f9;
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+     z-index: 1;
+ }
+
+ /* Style for the dropdown options when shown */
+ .custom-dropdown-options.show {
+     display: block;
+ }
+
+ /* Style for each option in the dropdown */
+ .custom-dropdown-option {
+     padding: 10px;
+     text-decoration: none;
+     display: block;
+     color: #333;
+ }
+
+ /* Style for each option when hovered */
+ .custom-dropdown-option:hover {
+     background-color: #ddd;
+ }
