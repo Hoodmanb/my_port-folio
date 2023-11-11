@@ -3,21 +3,28 @@
      margin: 0;
      text-decoration: none;
  }
-
- body {
-     background-color: rgb(30, 34, 53);
-     color: rgb(194, 183, 183);
+ body{
+    background-color: rgb(30, 34, 53);
+     color: rgb(197, 193, 193);
      font-family: 'Open Sans', sans-serif;
-     position: relative;
+ }
+ a{
+    color: rgb(197, 193, 193);
+ }
+
+ .section-1-overall {
      max-width: 100%;
      text-align: center;
      font-weight: bold;
+     margin-bottom: 20px;
  }
 
  .section-1 {
      width: 90%;
      margin: auto;
-
+     position:relative ;
+     height: 400px;
+     
  }
 
  .nav-bar {
@@ -58,6 +65,34 @@
  button{
     width: 35%;
     height: 3em;
+    font-weight: 900;
+    background: none;
+    border: 2px solid goldenrod;
+    border-radius: 4px;
+ }
+ img{
+    position: absolute;
+    height: 400px;
+    display: inline;
+    top: 0;
+    right: 0;
+ }
+ button a{
+    color: goldenrod;
+ }
+ .name-and-handle .material-icons{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    size: 50px;
+    border: none;
+ }
+ .section-2-overall{
+    background-color: rgb(74, 68, 87);
+    margin-top: 20px;
+ }
+ h5{
+    
  }
 
 
