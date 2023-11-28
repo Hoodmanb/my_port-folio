@@ -6,64 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nwigiri Joshua port-folio</title>
     <link rel="stylesheet" href="../css-files/index.css">
-    <script src="../js-files/index.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../js-files/index.js"></script>
+
 </head>
 
 <body>
+    <!--alias, nav bar/dropsown-->
     <div class="section-1-overall">
         <section class="section-1">
             <div class="nav-bar">
-                <h1 class="alias">NJ<span class="period">.</span></h1>
+                <h1 class="alias">NJ<span class="period">.</span><hr></h1>
 
-                <!-- Create a custom dropdown -->
-                <div class="custom-dropdown" onclick="toggleDropdown()"><i class="material-icons">&#xe8fe;</i></div>
-                <div class="custom-dropdown-options" id="dropdownOptions">
-                    <a href="#" class="custom-dropdown-option">Home</a>
-                    <a href="#" class="custom-dropdown-option">Blog</a>
-                    <a href="#" class="custom-dropdown-option">Contact</a>
+                <!--Create a custom -->
+                <i class="material-icons" onclick="dropdown()">&#xe8fe;</i>
+                <div class="dropdown-options" id="options">
+                    <a href="#" class="dropdown-option">-Home-</a>
+                    <a href="#" class="dropdown-option">-Blog-</a>
+                    <a href="#" class="dropdown-option">-Contact-</a>
                 </div>
             </div>
-            <div class="name-and-handle">
-                <h1>NWIGIRI<br>JOSHUA<span class="period">.</span></h1>
 
-                <hr>
+            <!--name and my social handles-->
+            <div class="name-and-handle">
+                <h1>WELCOME<br>WELCOME<span class="period">.</span></h1>
+                <h1 class="back-name">NWIGIRI<br>JOSHUA<span class="period">.</span></h1>
+                
 
                 <div class="links">
+                    <hr>
 
                     <a href="#">Instagram</a> |
-                    <a href="#">X</a> |
+                    <a href="https://x.com/joshua3302?t=QVIYRCWpx2v5qeIybqAVhA&s=09">X</a> |
                     <br>
                     <br>
-                    <a href="#">Github</a> |
-                    <a href="#">Linkedin</a>
+                    <a href="https://github.com/Hoodmanb">Github</a> |
+                    <a href="https://www.linkedin.com/in/joshua7281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a>
 
                 </div>
+
+                <!--button, image and icon-->
                 <div class="btn-and-img">
                     <button id="Contact" type="button">
-                        <a href="#">CONTACT ME</a>
+                        <a href="#">GET MY CV</a>
                     </button>
                     <img src="../images/PhotoRoom-20230912_164721.png" alt="image of nwigiri from 2023">
                 </div>
-                <i class="material-icons">&#xe86f;</i>
+                <!--<i class="material-icons">&#xe86f;</i>-->
             </div>
         </section>
     </div>
 
-    
+    <!--services-->
     <div class="section-2-overall">
         <section class="section-2">
             <h5>SERVICES</h5>
             <h1>What I Am Great At</h1>
-            <p>As a versatile software developer proficient in C, Js,
+            <p>
+                I am a versatile software developer proficient in C, Js,
                 HTML, and CSS, I excel in both front-end and back-end development.
                 With a keen eye for detail in crafting responsive and visually appealing
                 user interfaces, coupled with robust server-side programming skills,
                 I bring a comprehensive skill set to deliver seamless and dynamic web
-                solutions."</p>
+                solutions.
+            </p>
 
+            <!--first card(web-dev)-->
+            <div class="web-dev-icon">
+                <div class="web-dev">
+                    <i class="material-icons">&#xe86f;</i>
+                    <h1>Web Development</h1>
+                    <p>
+                        3 projects
+                    </p>
+                </div>
+            </div>
+
+            <!--second card(mobile-app)-->
+            <div class="mobile-app-icon">
+                <div class="mobile-app">
+                    <i class="material-icons">&#xe859;</i>
+                    <h1>Mobile Application </h1>
+                    <p>
+                        0 projects
+                    </p>
+                </div>
+            </div>
+
+            <section class="section-3">
+                <h1>1+</h1>
+                <p>
+                    Years Of Experience
+                </p>
+
+                <h1>2+</h1>
+                <p>
+                    Satisfied Customers
+                </p>
+
+                <h1>2+</h1>
+                <p>
+                    Clients Served
+                </p>
+
+            </section>
         </section>
-    </div>
-</body>
 
+    </div>
+    <footer>
+        <p>
+            Contact Me
+        </p>
+        <a href="#"><i class="material-icons">&#xe0be;</i><h4>joshuadebravo@Gmail.com</h4></a>
+
+        <a href="#"><i class="material-icons">&#xe551;</i><h4>+234 70 605 444 33</h4>
+        </a>
+
+        <a href="https://wa.me/+2347060544433"><i class="material-icons">&#xe0b7;</i><h4>whatsapp</h4>
+        </a>
+
+        <hr>
+        <br>
+        <span class="copyright">
+            <i class="material-icons">&#xe90c;</i> Nwigiri | All Rights Reserved
+        </span>
+        <br>
+        <br>
+    </footer>
+</body>
 </html>

@@ -1,5 +1,5 @@
   // Toggle the display of the dropdown options
-  function toggleDropdown() {
-    var dropdownOptions = document.getElementById("dropdownOptions");
-    dropdownOptions.classList.toggle("show");
+function dropdown() {
+    let dropDownOptions = document.getElementById("options");
+    dropDownOptions.classList.toggle("show");
 }
