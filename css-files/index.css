@@ -20,7 +20,7 @@ img {
     float: right;
 }
 body {
-    background-color: white;
+    background-color: rgb(74, 68, 87);
     color: rgb(197, 193, 193);
     font-family: 'Open Sans', sans-serif;
     font-size: large;
@@ -204,11 +204,86 @@ h5 {
 }
 footer {
     background-color: rgb(30, 34, 53);
-    width: 100%;
+    width: 90%;
+    margin: auto;
     text-align: center;
+    border-radius: 15px;
+    padding: 30px;
+    padding-bottom: 70px;
+    margin-bottom: 30px;
 }
-footer p {
-    text-align: center;
+footer h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+footer button{
+    background-color:goldenrod;
+    color: black;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.social-acc{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+}
+.social-acc a i{
+    font-size: 20px;
+}
+footer h6{
+    margin-bottom:5px ;
+    text-align: right;
+}
+form label{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.message{
+    margin-top:27px;
+    margin-left: 30px;
+}
+#name, #email{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px;
+    width: 70%;
+}
+textarea{
+    border-radius: 10px;
+    width: 70%;
+    margin: 25px;
+}
+#submit{
+    width: 30%;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: rgb(85, 231, 85);
+    border: none;
+    float: left;
+    margin-left: 15%;
+}
+span:last-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+}
+span .fas {
+    margin-bottom: 30px;
+    margin-right: 5px;
+}
+/*footer p {
+    text-align: c
+enter;
     font-weight: bold;
     padding-top: 20px;
     color: goldenrod;
@@ -240,10 +315,14 @@ footer hr {
     border-radius: 5px
 }
 footer span {
-    display: flex;
+    display: inline;
     justify-content: center;
     align-items: center;
+    line-height: 30px;
 }
+footer span .material-icons {
+    top: 30px;
+}*/
 
 /*style for custom dropdown*/
 .dropdown-options {
