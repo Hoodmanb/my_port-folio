@@ -5,23 +5,18 @@ function dropdown() {
 };
 
 
-
 //zoomout for the tools-logo
-const zoomable = document.getElementsByClassName("tools-logo");
-
-zoomable.forEach(zoom => {
-    zoom.addEventListener('click', () => {
-        zoomable.forEach(el => el.classList.remove('zoomed'));
-        zoom.classList.add('zoomed');
+document.addEventListener('DOMContentLoaded', function() {
+    const elements = document.querySelectorAll('.tools-logo');
+  
+    elements.forEach(function(el) {
+      el.addEventListener('click', function() {
+        elements.forEach(function(item) {
+          if (item !== el) {
+            item.classList.remove('zoomed');
+          }
+        });
+        el.classList.toggle('zoomed');
+      });
     });
-});
-
-
-
-/*let toolsLogo = document.getElementsByClassName('tools-logo')
-
-function zoom(){
-    toolsLogo.classList.add('zoomed')
-    console.log("my name is Joshua");
-};
-*/
+  });

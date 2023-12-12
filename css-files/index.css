@@ -219,20 +219,17 @@ h5 {
     display: inline-block;
     width: 40%;
 }
-.section-3 p {
+span p {
     display: block;
     text-align: center;
     margin-top: 8px;
 }
-/*.section-3:active p{
-    display: block;
-}*/
 .tools-logo{
     transition: transform 0.5s ease;
     cursor: pointer;
 }
 .zoomed{
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 footer {
     background-color: rgb(30, 34, 53);
