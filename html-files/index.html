@@ -10,7 +10,7 @@
     <script src="../js-files/index.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-ABC123..." crossorigin="anonymous" />
+    integrity="sha512-ABC123..." crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -28,7 +28,7 @@
                 <div class="dropdown-options" id="options">
                     <a href="#" class="dropdown-option">-Home-</a>
                     <a href="#" class="dropdown-option">-Blog-</a>
-                    <a href="#" class="dropdown-option">-Contact-</a>
+                    <a href="#form" class="dropdown-option">-Contact-</a>
                 </div>
             </div>
 
@@ -66,11 +66,13 @@
     <!--services-->
     <div class="section-2-overall">
         <section class="section-2">
-            <h5>SERVICES</h5>
-            <h1>What I Am Great At</h1>
-            <p>
-                I am a versatile software developer proficient in C, Js,
-                HTML, and CSS, I excel in both front-end and back-end development.
+            <h5> <i style="font-size:40px; margin-right:10px;" class="fa">&#xf129;</i>ABOUT ME</h5><br>
+
+            <h3 class="my-name">Nwigiri Joshua Chibuzo</h3>
+
+            <p class="note">
+                I am a versatile software developer proficient in c, js,
+                html, and css, I excel in both front-end and back-end development.
                 With a keen eye for detail in crafting responsive and visually appealing
                 user interfaces, coupled with robust server-side programming skills,
                 I bring a comprehensive skill set to deliver seamless and dynamic web
@@ -100,8 +102,7 @@
             </div>
 
             <section class="section-3">
-                <h1><i style='font-size:50px;' class='fas'>&#xf7d9;</i>SKILLS AND TOOLS</h1>
-                <hr>
+                <h1><i style='font-size:50px;' class='fas'>&#xf7d9;</i>STACKS</h1>
 
                 <span class="tools-logo"><i style='color:#E44D26;' class='fab'>&#xf13b;</i>
                     <p>
@@ -168,15 +169,15 @@
 
         <h6>Drop Me A Message</h6>
 
-        <form action="/submit-form" method="post">
-            <label for="name">Name</label>
-            <input type="name" id="name" name="name" required><br>
+        <form action="/submit-form" method="post" id="form">
+            <label for="name" class="label">Name</label>
+            <input type="name" id="name" name="name" class="input" oninput="inputVeri()" required><br>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required><br>
+            <label for="email" class="label">Email</label>
+            <input type="email" id="email" class="input" oninput="inputVeri()" name="email" required><br>
 
-            <label class="message" for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea><br>
+            <label class="message input" for="message">Message</label>
+            <textarea id="message" name="message" oninput="inputVeri()" class="input" rows="5" required></textarea><br>
 
             <input type="submit" id="submit" value="Send">
         </form>
@@ -188,6 +189,9 @@
     </span>
     <br>
     <br>
+    
+    <!--back to top button-->
+    <a href="#top"><i style="font-size:35px" id="back-to-top" class="fa">&#xf0aa;</i></a>
 </body>
 
 </html>

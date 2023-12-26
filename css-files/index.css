@@ -8,6 +8,9 @@
     /* For Android */
     box-sizing: border-box;
 }
+html {
+      scroll-behavior: smooth;
+    }
 .btn-and-img img {
     display: none;
     position: absolute;
@@ -21,7 +24,7 @@
 }
 body {
     background-color: rgb(74, 68, 87);
-    color: rgb(197, 193, 193);
+    color:rgb(197, 193, 193) /*#C0C0C0*/;
     font-family: 'Open Sans', sans-serif;
     font-size: large;
     max-width: 100%;
@@ -154,15 +157,20 @@ button a {
 h5 {
     margin-top: 15px;
     margin-bottom: 5px;
-    color: goldenrod;
+    font-size: 30px;
 }
-.section-2 h1 {
-    margin-bottom: 5px;
-}
-.section-2 p {
+.note, .my-name {
     line-height: 25px;
+    text-align: justify;
+    font-weight: normal;
+    margin-bottom: 35px;
+    color: #DCDCDC;
+    font-family: "Gill Sans", sans-serif;
 }
-
+.my-name{
+    margin-bottom: 10px;
+    text-decoration: double underline goldenrod;
+}
 /*first card (web development )*/
 .web-dev-icon {
     background-color: rgb(30, 34, 53);
@@ -199,16 +207,9 @@ h5 {
     margin: 50px auto;
     position: relative;
 }
-.section-3 hr{
-    width: 13em;
-    background-color: goldenrod;
-    height: 3px;
-    border: none ;
-    border-radius: 5px;
-    margin: auto;
-}
 .section-3 h1{
     font-size: 25px;
+    text-decoration: underline goldenrod;
 }
 .section-3 .fa,
 .section-3 .fab {
@@ -233,6 +234,7 @@ span p {
 }
 footer {
     background-color: rgb(30, 34, 53);
+    color: #708090;
     width: 90%;
     margin: auto;
     text-align: center;
@@ -268,7 +270,7 @@ footer h6 {
     margin-bottom: 5px;
     text-align: right;
 }
-form label {
+label {
     position: absolute;
     margin-left: 20px;
     margin-top: 10px;
@@ -290,7 +292,6 @@ form input {
     padding: 10px;
     /*padding-top: 15px;*/
 }
-
 textarea {
     border-radius: 10px;
     width: 70%;
@@ -327,7 +328,6 @@ span .fas {
     background-color: #232139;
     width: 100%;
     margin-top: 3em;
-    border-radius: 10px;
     overflow: hidden;
     top: 0;
     animation: drop 1.5s ease-out;
@@ -348,10 +348,31 @@ span .fas {
 
 }
 .nav-bar .material-icons {
-    border: 1px solid white;
-    padding: 2px;
     border-radius: 8px;
-    font-size: 30px;
+    font-size: 35px;
     position: relative;
     float: left;
 }
+
+/*back to top button*/
+#back-to-top{
+    bottom: 35px;
+    right: 30px;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    color: goldenrod;
+    animation: moveUpDown 1s ease-in infinite alternate;
+    border: 2px solid #C5C1C1;
+    border-radius: 100px;
+    padding: 2px;
+}
+/* Keyframes for the back-to-top animation */
+    @keyframes moveUpDown {
+      0% {
+        transform: translateY(-5px);
+      }
+      100% {
+        transform: translateY(5px);
+      }
+    }
