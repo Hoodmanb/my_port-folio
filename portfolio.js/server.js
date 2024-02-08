@@ -11,8 +11,10 @@ const host = "127.0.0.1";
 
 const expApp = express();
 
+
 expApp.set("view engine", "ejs");
 expApp.use("/assets", express.static("assets"));
+
 
 expApp.get("/", function (request, res) {
 	res.render("index");

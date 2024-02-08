@@ -2,243 +2,286 @@
 <html>
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Nwigiri Joshua port-folio</title>
- <link rel="stylesheet" href="../assets/index.css">
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- <script
-  src='https://kit.fontawesome.com/a076d05399.js'
-  crossorigin='anonymous'></script>
- <link
- rel="stylesheet"
- href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
- integrity="sha512-ABC123..."
- crossorigin="anonymous"
- />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nwigiri Joshua port-folio</title>
+  <link rel="stylesheet" href="../assets/index.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js'
+    crossorigin='anonymous'></script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  integrity="sha512-ABC123..."
+  crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../assets/index.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 <body>
-<div class="navbar">
-<div class="initial">
-<img src="../assets/image-2.png.jpg"
-alt="image
-of nwigiri
-from 2023">
-</div>
-<div class="dropdown" onclick="toggleDropdown()">
-<span><i class="material-icons" style="font-size:35px;">&#xe8fe;</i></span>
-<div class="dropdown-content">
-<a href="#" onclick="closeDropdown()">-Home-</a>
-<a href="#" onclick="closeDropdown()">-Blog-</a>
-<a href="#" onclick="closeDropdown()">-Contact-</a>
-</div>
-</div>
-</div>
 
-<!--alias, nav bar/dropdown-->
-<div class="section-1-overall">
-<section class="section-1">
-<div class="name-and-handle">
-<div class="links">
-<h4>Hi <span> 👋</span>,<br>
-I am <b style="color:goldenrod;" class="handwriting-container handwriting "></b><br> a <b style="color:goldenrod;">Software Engineer</b>.</h4><br>
+  <!--nav bar and dropdown-->
+  <div class="navbar">
+    <div class="initial">
+      <img src="../assets/image-2.png.jpg"
+      alt="image
+      of nwigiri
+      from 2023">
+    </div>
 
-<a href="#">Instagram</a> |
-<a href="https://x.com/joshua3302?t=QVIYRCWpx2v5qeIybqAVhA&s=09">X</a> |
-<br>
-<br>
-<a href="https://github.com/Hoodmanb">Github</a> |
-<a
-href="https://www.linkedin.com/in/joshua7281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a>
+    <!--buger icon and dropdown-->
+    <div class="dropdown" id="burger-container" onclick="toggleDropdown()">
+      <div id="burger">
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+      </div>
 
-</div>
+      <div class="dropdown-content">
+        <a href="#" onclick="closeDropdown()">-Home-</a>
+        <a href="#" onclick="closeDropdown()">-Blog-</a>
+        <a href="#" onclick="closeDropdown()">-Achievements-</a>
+        <a href="#" onclick="closeDropdown()">-Contact-</a>
+      </div>
+    </div>
+  </div>
 
-<!--button, image and icon-->
-<div class="btn-and-img">
-<button id="#" type="button">
-<a href="#hire">HIRE ME</a>
-</button>
-<button id="Contact" type="button">
-<a href="#">GET MY CV </a><i class="material-icons"style="color:rgb(197, 193, 193);">&#xe2c4;</i>
-</button>
-</div>
-</div>
-</section>
-</div>
+  <!--alias and social accounts-->
+  <div class="section-1-overall">
+    <section class="section-1">
+      <div class="name-and-handle">
+        <div class="links">
+          <h4>Hi <span> 👋</span>,<br>
+            I am <b style="color:goldenrod;" class="handwriting-container handwriting "></b><br> a <b style="color:goldenrod;">Software Engineer</b>.</h4><br>
 
-<!--services-->
-<div class="section-2-overall">
-<section class="section-2">
-<h5 class="about"> <i style="font-size:50px; margin:0px 10px 0px 10px;" class="fa">&#xf129;</i>ABOUT ME</h5><br><br>
+          <a href="#">Instagram</a> |
+          <a href="https://x.com/joshua3302?t=QVIYRCWpx2v5qeIybqAVhA&s=09">X</a> |
+          <br>
+          <br>
+          <a href="https://github.com/Hoodmanb">Github</a> |
+          <a
+            href="https://www.linkedin.com/in/joshua7281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a>
 
-<h6 class="my-name handwriting-container handwriting "></h6>
+        </div>
 
-<p>
-I am a versatile software developer proficient in c, js,
-html, and css, I excel in both front-end and back-end development.
-With a keen eye for detail in crafting responsive and visually appealing
-user interfaces, coupled with robust server-side programming skills,
-I bring a comprehensive skill set to deliver seamless and dynamic web
-solutions.
-</p>
-<br>
+        <!--button, image and icon-->
+        <div class="btn-and-img">
+          <button type="button">
+            <a href="#hire">HIRE ME</a>
+          </button>
+          <button id="Contact" type="button">
+            <a href="#">GET MY CV </a><i class="material-icons"style="color:rgb(197, 193, 193);">&#xe2c4;</i>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
 
-<b style='font-size:50px;'>📁</b><h5 class="about">My Done Projects</h5><br>
-<!--first card(web-dev)-->
-<div class="projects">
-<img src="../assets/image-2.png.jpg"
-alt="image
-of nwigiri
-from 2023">
-<div class="description">
-<h5>MY
-PORT-FOLIO</h5>
-<p>
-Nwigiri's port-folio
-</p>
-<h6>By: <b>NWIGIRI</b></h6>
-<h5>TOOLS USED: <b>HTML</b> <b>CSS</b> <b>JAVASCRIPT</b> <b>GOOGLE FONTS</b></h5>
-<span class="source">
-<a href="#" class="first"><i class="fab" style="font-size:30px;">&#xf092;</i></a>
-<a href="#" class="second"><i class='fas' style="font-size:30px;">&#xf0c1;</i></a>
-</span>
+  <!--services-->
+  <div class="section-2-overall">
+    <section class="section-2">
+      <h5 class="about"> <i style="font-size:50px; margin:0px 10px 0px 10px;" class="fa">&#xf129;</i>ABOUT ME</h5><br><br>
 
-</div>
-</div>
+      <h6 class="my-name handwriting-container handwriting "></h6>
 
-<section class="section-3">
-<h1><i style='font-size:50px;' class='fas'>&#xf7d9;</i>STACKS</h1>
+      <p>
+        I am a versatile software developer proficient in c, js,
+        html, and css, I excel in both front-end and back-end development.
+        With a keen eye for detail in crafting responsive and visually appealing
+        user interfaces, coupled with robust server-side programming skills,
+        I bring a comprehensive skill set to deliver seamless and dynamic web
+        solutions.
+      </p>
+      <br>
 
-<span class="tools-logo" onclick="toggleVisibility(1)"><i style='color:#E44D26;' class='fab'>&#xf13b;</i>
-<p>
-HTML 5
-</p>
-</span>
-<span class="tools-logo" onclick="toggleVisibility(2)"><i style='color:#F7DF1E;' class='fab'>&#xf3d3;</i>
-<p>
-JAVASCRIPT
-</p>
-</span>
-<span class="tools-logo" onclick="toggleVisibility(3)"><i style='color:#1572B6;' class="fa">&#xf13c;</i>
-<p>
-CSS 3
-</p>
-</span>
-<span class="tools-logo" onclick="toggleVisibility(4)"><i style='color:#000000;' class='fab'>&#xf09b;</i>
-<p>
-GIT-HUB
-</p>
-</span>
-<span class="tools-logo" onclick="toggleVisibility(5)"><i style='color:#000000;' class='fab'>&#xf1d2;</i>
-<p>
-GIT
-</p>
-</span>
-<span class="tools-logo" onclick="toggleVisibility(6)"><i style='color:#8BC500' class='fab'>&#xf17c;</i>
-<p class="wap">
-LINUX
-</p>
-</span>
-<span class="tools-logo" onclick="toggleVisibility(7)"><i style='color:#68A063;' class='fab'>&#xf419;</i>
-<p class="wap">
-NODE.JS
-</p>
-</span>
+      <b style='font-size:50px;'>📁</b><h5 class="about">My Done Projects</h5><br>
+      <!--first card(web-dev)-->
+      <div class="projects">
+        <img src="../assets/image-2.png.jpg"
+        alt="image
+        of nwigiri
+        from 2023">
+        <div class="description">
+          <h5>MY
+            PORT-FOLIO</h5>
+          <p>
+            Nwigiri's port-folio
+          </p>
+          <h6>By: <b>NWIGIRI</b></h6>
+          <h5>TOOLS USED: <b>HTML</b> <b>CSS</b> <b>JAVASCRIPT</b> <b>GOOGLE FONTS</b></h5>
+          <span class="source">
+            <a href="#" class="first"><i class="fab" style="font-size:30px;">&#xf092;</i></a>
+            <a href="#" class="second"><i class='fas' style="font-size:30px;">&#xf0c1;</i></a>
+          </span>
 
-</section>
-</section>
+        </div>
+      </div>
 
-</div>
-<footer id="hire">
+      <section class="section-3" id="section3">
+        <h1><i style='font-size:50px;' class='fas'>&#xf7d9;</i>STACKS</h1>
 
 
-<h2>Let's <b style="color:goldenrod;">Build</b> Your<br>
-<b style="color:goldenrod;">Next Project</b>!
-</h2>
 
-<a href="#"><button id="contact-me"> Contact Me <i class="material-icons">&#xe01f;</i></button></a>
-<div class="social-acc">
+      </section>
+    </section>
 
-<a href="https://x.com/joshua3302?t=QVIYRCWpx2v5qeIybqAVhA&s=09"><i class="fab">&#xf081;</i></a>
+  </div>
+  <footer id="hire">
 
-<a href="https://wa.me/+2347060544433"><i class="fa">&#xf199; </i></a>
 
-<a href="https://github.com/Hoodmanb"><i class="fab">&#xf092;</i></a>
+    <h2>Let's <b style="color:goldenrod;">Build</b> Your<br>
+      <b style="color:goldenrod;">Next Project</b>!
+    </h2>
 
-<a href="https://wa.me/+2347060544433"><i class="fab">&#xf40c;</i></a>
+    <a href="#"><button id="contact-me"> Contact Me <i class="material-icons">&#xe01f;</i></button></a>
+    <div class="social-acc">
 
-<a href="#"><i class="fab">&#xf08c;</i></a>
+      <a href="https://x.com/joshua3302?t=QVIYRCWpx2v5qeIybqAVhA&s=09"><i class="fab">&#xf081;</i></a>
 
-<a href="#"><i class="fas">&#xf87b;</i></a>
-</div>
+      <a href="https://wa.me/+2347060544433"><i class="fa">&#xf199; </i></a>
 
-<h6 class="handwriting-container send-msg" style="font-size:1em;"></h6>
+      <a href="https://github.com/Hoodmanb"><i class="fab">&#xf092;</i></a>
 
-<form action="/sendMail" method="post" id="form">
-<label for="Name" class="label">Name</label>
-<input type="name" id="name" name="Name" class="input" oninput="inputVeri()" required><br>
+      <a href="https://wa.me/+2347060544433"><i class="fab">&#xf40c;</i></a>
 
-<label for="Email" class="label">Email</label>
-<input type="email" id="email" class="input" oninput="inputVeri()" name="Email" required><br>
+      <a href="#"><i class="fab">&#xf08c;</i></a>
 
-<label class="message label" for="Message">Message</label>
-<textarea id="message" name="Message" oninput="inputVeri()" class="input" rows="5" required></textarea><br>
+      <a href="#"><i class="fas">&#xf87b;</i></a>
+    </div>
 
-<input type="submit" id="submit" value="Send">
-</form>
-</footer>
-<br>
-<span class="copyright">
-<i class='fas'>&#xf1f9;</i>2023 | All Rights Reserved<br>
-Designed & Built by Nwigiri
-</span>
-<br>
-<br>
+    <h6 class="handwriting-container send-msg" style="font-size:1em;"></h6>
 
-<!--back to top button-->
-<a href="#top"><i style="font-size:35px" id="back-to-top" class="fa">&#xf0aa;</i></a>
+    <form action="/sendMail" method="post" id="form">
+      <label for="name" class="label">Name</label>
+      <input type="name" id="name" name="Name" class="input" oninput="inputVeri()" required><br>
 
-<script>
-const phrasesArray = [
-["Joshua!", "Chibuzo!"],
-["Drawing 🗽", "Coding 💻", "Rap-songs 🎧", "Motorcycling 🏍️", "Movies 📽️", "Food 🤭", "Football ⚽", "Tennis 🏓"],
-["Drop me a message!", "I would reply in a flash."],
-// Add more phrases as needed
-];
+      <label for="email" class="label">Email</label>
+      <input type="email" id="email" class="input" oninput="inputVeri()" name="Email" required><br>
 
-function simulateHandwriting(container, text) {
-let index = 0;
+      <label class="message label" for="message">Message</label>
+      <textarea id="message" name="Message" oninput="inputVeri()" class="input" rows="5" required></textarea><br>
 
-function type() {
-container.innerHTML = text[index].substring(0, container.innerHTML.length + 1);
-if (container.innerHTML === text[index]) {
-setTimeout(erase, 3000);
-} else {
-setTimeout(type, 200);
-}
-}
+      <input type="submit" id="submit" value="Send">
+    </form>
+  </footer>
+  <br>
+  <span class="copyright">
+    <i class='fas'>&#xf1f9;</i>2023 | All Rights Reserved<br>
+    Designed & Built by Nwigiri
+  </span>
+  <br>
+  <br>
 
-function erase() {
-container.innerHTML = text[index].substring(0, container.innerHTML.length - 1);
-if (container.innerHTML === "") {
-index = (index + 1) % text.length;
-setTimeout(function () {
-type();
-}, 200);
-} else {
-setTimeout(erase, 50);
-}
-}
+  <!--back to top button-->
+  <a href="#top"><i style="font-size:35px" id="back-to-top" class="fa">&#xf0aa;</i></a>
 
-type();
-}
+  <!--div pop up on message success-->
+  <div id="popup" class="popup"></div>
 
-// Start the simulation for each container
-document.querySelectorAll('.handwriting-container').forEach(function (container, index) {
-simulateHandwriting(container, phrasesArray[index % phrasesArray.length]); // Cycle through phrases
-});
-</script>
-<script src="../assets/index.js"></script>
+  <script>
+    const phrasesArray = [
+      ["Joshua!", "Chibuzo!"],
+      ["Drawing 🗽", "Coding 💻", "Rap-songs 🎧", "Motorcycling 🏍️", "Movies 📽️", "Food 🤭", "Football ⚽", "Tennis 🏓"],
+      ["Drop me a message!", "I would reply in a flash."],
+      // Add more phrases as needed
+    ];
+
+    function simulateHandwriting(container, text) {
+      let index = 0;
+
+      function type() {
+        container.innerHTML = text[index].substring(0, container.innerHTML.length + 1);
+        if (container.innerHTML === text[index]) {
+          setTimeout(erase, 3000);
+        } else {
+          setTimeout(type, 200);
+        }
+      }
+
+      function erase() {
+        container.innerHTML = text[index].substring(0, container.innerHTML.length - 1);
+        if (container.innerHTML === "") {
+          index = (index + 1) % text.length;
+          setTimeout(function () {
+            type();
+          }, 200);
+        } else {
+          setTimeout(erase, 50);
+        }
+      }
+
+      type();
+    }
+
+    // Start the simulation for each container
+    document.querySelectorAll('.handwriting-container').forEach(function (container, index) {
+      simulateHandwriting(container, phrasesArray[index % phrasesArray.length]);
+    });
+
+
+
+
+    // Get the status query parameter from the URL
+    const queryParams = new URLSearchParams(window.location.search);
+    const status = queryParams.get('status');
+    const popup = document.getElementById('popup');
+
+    // Show the appropriate message and style the popup based on the status
+    if (status === 'success') {
+      popup.innerText = 'Success: Message sent';
+      popup.classList.add('success');
+      popup.classList.add('show');
+    } else if (status === 'error') {
+      popup.innerText = 'Error: Message not sent';
+      popup.classList.add('error');
+      popup.classList.add('show');
+    }
+
+
+    // Hide the popup after 5 seconds
+    setTimeout(() => {
+      popup.classList.remove('show');
+    }, 7000);
+
+
+
+    //input labels interaction
+    function inputVeri() {
+      const inputFields = document.getElementsByClassName('input');
+      const labels = document.getElementsByClassName('label');
+
+      for (let i = 0; i < inputFields.length; i++) {
+        if (inputFields[i].value !== '') {
+          labels[i].style.display = 'none';
+        } else {
+          labels[i].style.display = 'inline';
+        }
+      }
+    }
+
+
+    function toggleDropdown() {
+      var dropdownContent = document.querySelector(".dropdown-content");
+      var isActive = dropdownContent.parentElement.classList.contains("active");
+      if (isActive) {
+        dropdownContent.parentElement.classList.remove("active");
+      } else {
+        dropdownContent.parentElement.classList.add("active");
+      }
+    }
+
+
+    //Burger nav toggle
+    $(document).ready(function() {
+      $("#burger-container").on('click', function() {
+        $(this).toggleClass("open");
+        console.log(5);
+      });
+    });
+
+
+  </script>
 </body>
 </html>
