@@ -10,7 +10,7 @@ const sendMail = expressAsyncHandler(async (req, res) => {
     host: "smtp.gmail.com",
     port: 465,
     auth: {
-      user: process.env.mail,
+      user: process.env.from_mail,
       pass: process.env.app_pass
     }
   });
@@ -22,7 +22,7 @@ const sendMail = expressAsyncHandler(async (req, res) => {
   .join('\n');
 
   const mail = {
-    from: from_mail,
+    from: process.env.from_mail,
     to: process.env.mail_reciv,
     subject: subject,
     text: text
