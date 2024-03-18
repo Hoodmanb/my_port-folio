@@ -17,11 +17,31 @@ expApp.use("/assets", express.static("assets"));
 
 
 expApp.get("/", function (request, res) {
-	res.render("index");
+  let head = true;
+  let nav = true;
+  res.render("index", {head, nav});
 });
 
+
+expApp.get("/resume", function (request, res) {
+  res.render("resume");
+});
+
+expApp.get("/blog", function (request, res) {
+  let head = true;
+  let nav = true;
+  res.render("blog", {head, nav});
+});
+
+expApp.get("/partials", function (request, res) {
+  res.render("partials/partial");
+});
+
+
 expApp.use(bodyParser.json());
-expApp.use(bodyParser.urlencoded({ extended: true }));
+expApp.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 
 const route = require("./routes/route.js")

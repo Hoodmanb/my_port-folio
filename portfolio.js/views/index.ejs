@@ -1,52 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nwigiri Joshua port-folio</title>
-  <link rel="stylesheet" href="../assets/index.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src='https://kit.fontawesome.com/a076d05399.js'
-    crossorigin='anonymous'></script>
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-  integrity="sha512-ABC123..."
-  crossorigin="anonymous"
-  />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="../assets/index.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <%- include('partials/head') %>
+
 </head>
 <body>
-
-  <!--nav bar and dropdown-->
-  <div class="navbar">
-    <div class="initial">
-      <img src="../assets/image-2.png.jpg"
-      alt="image
-      of nwigiri
-      from 2023">
-    </div>
-
-    <!--buger icon and dropdown-->
-    <div class="dropdown" id="burger-container" onclick="toggleDropdown()">
-      <div id="burger">
-        <span>&nbsp;</span>
-        <span>&nbsp;</span>
-        <span>&nbsp;</span>
-        <span>&nbsp;</span>
-      </div>
-
-      <div class="dropdown-content">
-        <a href="#" onclick="closeDropdown()">-Home-</a>
-        <a href="#" onclick="closeDropdown()">-Blog-</a>
-        <a href="#" onclick="closeDropdown()">-Achievements-</a>
-        <a href="#" onclick="closeDropdown()">-Contact-</a>
-      </div>
-    </div>
-  </div>
+    <%- include('partials/nav_dropdown') %>
 
   <!--alias and social accounts-->
   <div class="section-1-overall">
@@ -61,15 +21,15 @@
           <br>
           <br>
           <a href="https://github.com/Hoodmanb">Github</a> |
-          <a
-            href="https://www.linkedin.com/in/joshua7281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a>
+          <a href="https://www.linkedin.com/in/joshua7281">Linkedin</a>
 
         </div>
 
         <!--button, image and icon-->
         <div class="btn-and-img">
           <button type="button">
-            <a href="#hire">HIRE ME</a>
+            <a href="#hire">LET'S TALK <i style='font-size:1.1em' class='fas'>&#xf1d8;</i>
+            </a>
           </button>
           <button id="Contact" type="button">
             <a href="#">GET MY CV </a><i class="material-icons"style="color:rgb(197, 193, 193);">&#xe2c4;</i>
@@ -96,16 +56,12 @@
       </p>
       <br>
 
-      <b style='font-size:50px;'>📁</b><h5 class="about">My Done Projects</h5><br>
+      <b style='font-size:50px;'>📁</b><h5 class="about">My Projects</h5><br>
       <!--first card(web-dev)-->
       <div class="projects">
-        <img src="../assets/image-2.png.jpg"
-        alt="image
-        of nwigiri
-        from 2023">
+        <img src="/assets/images/image-2.png.jpg" alt="image of nwigiri from 2023">
         <div class="description">
-          <h5>MY
-            PORT-FOLIO</h5>
+          <h5>MY PORT-FOLIO</h5>
           <p>
             Nwigiri's port-folio
           </p>
@@ -125,6 +81,8 @@
 
 
       </section>
+
+
     </section>
 
   </div>
@@ -135,7 +93,7 @@
       <b style="color:goldenrod;">Next Project</b>!
     </h2>
 
-    <a href="#"><button id="contact-me"> Contact Me <i class="material-icons">&#xe01f;</i></button></a>
+    <!--<a href="#"><button id="contact-me"> Contact Me <i class="material-icons">&#xe01f;</i></button></a>-->
     <div class="social-acc">
 
       <a href="https://x.com/joshua3302?t=QVIYRCWpx2v5qeIybqAVhA&s=09"><i class="fab">&#xf081;</i></a>
@@ -154,21 +112,18 @@
     <h6 class="handwriting-container send-msg" style="font-size:1em;"></h6>
 
     <form action="/sendMail" method="post" id="form">
-      <label for="name" class="label">Name</label>
-      <input type="name" id="name" name="Name" class="input" oninput="inputVeri()" required><br>
+      <input type="name" id="name" name="Name" class="input" placeholder="Name" required><br>
 
-      <label for="email" class="label">Email</label>
-      <input type="email" id="email" class="input" oninput="inputVeri()" name="Email" required><br>
+      <input type="email" id="email" class="input" placeholder="Email" name="Email" required><br>
 
-      <label class="message label" for="message">Message</label>
-      <textarea id="message" name="Message" oninput="inputVeri()" class="input" rows="5" required></textarea><br>
+      <textarea id="message" name="Message" placeholder="Message" class="input" rows="5" required></textarea><br>
 
       <input type="submit" id="submit" value="Send">
     </form>
   </footer>
   <br>
   <span class="copyright">
-    <i class='fas'>&#xf1f9;</i>2023 | All Rights Reserved<br>
+    <i class='fas' style="float:center;">&#xf1f9;</i><br><br>2023 | All Rights Reserved<br>
     Designed & Built by Nwigiri
   </span>
   <br>
@@ -179,109 +134,7 @@
 
   <!--div pop up on message success-->
   <div id="popup" class="popup"></div>
-
-  <script>
-    const phrasesArray = [
-      ["Joshua!", "Chibuzo!"],
-      ["Drawing 🗽", "Coding 💻", "Rap-songs 🎧", "Motorcycling 🏍️", "Movies 📽️", "Food 🤭", "Football ⚽", "Tennis 🏓"],
-      ["Drop me a message!", "I would reply in a flash."],
-      // Add more phrases as needed
-    ];
-
-    function simulateHandwriting(container, text) {
-      let index = 0;
-
-      function type() {
-        container.innerHTML = text[index].substring(0, container.innerHTML.length + 1);
-        if (container.innerHTML === text[index]) {
-          setTimeout(erase, 3000);
-        } else {
-          setTimeout(type, 200);
-        }
-      }
-
-      function erase() {
-        container.innerHTML = text[index].substring(0, container.innerHTML.length - 1);
-        if (container.innerHTML === "") {
-          index = (index + 1) % text.length;
-          setTimeout(function () {
-            type();
-          }, 200);
-        } else {
-          setTimeout(erase, 50);
-        }
-      }
-
-      type();
-    }
-
-    // Start the simulation for each container
-    document.querySelectorAll('.handwriting-container').forEach(function (container, index) {
-      simulateHandwriting(container, phrasesArray[index % phrasesArray.length]);
-    });
-
-
-
-
-    // Get the status query parameter from the URL
-    const queryParams = new URLSearchParams(window.location.search);
-    const status = queryParams.get('status');
-    const popup = document.getElementById('popup');
-
-    // Show the appropriate message and style the popup based on the status
-    if (status === 'success') {
-      popup.innerText = 'Success: Message sent';
-      popup.classList.add('success');
-      popup.classList.add('show');
-    } else if (status === 'error') {
-      popup.innerText = 'Error: Message not sent';
-      popup.classList.add('error');
-      popup.classList.add('show');
-    }
-
-
-    // Hide the popup after 5 seconds
-    setTimeout(() => {
-      popup.classList.remove('show');
-    }, 7000);
-
-
-
-    //input labels interaction
-    function inputVeri() {
-      const inputFields = document.getElementsByClassName('input');
-      const labels = document.getElementsByClassName('label');
-
-      for (let i = 0; i < inputFields.length; i++) {
-        if (inputFields[i].value !== '') {
-          labels[i].style.display = 'none';
-        } else {
-          labels[i].style.display = 'inline';
-        }
-      }
-    }
-
-
-    function toggleDropdown() {
-      var dropdownContent = document.querySelector(".dropdown-content");
-      var isActive = dropdownContent.parentElement.classList.contains("active");
-      if (isActive) {
-        dropdownContent.parentElement.classList.remove("active");
-      } else {
-        dropdownContent.parentElement.classList.add("active");
-      }
-    }
-
-
-    //Burger nav toggle
-    $(document).ready(function() {
-      $("#burger-container").on('click', function() {
-        $(this).toggleClass("open");
-        console.log(5);
-      });
-    });
-
-
-  </script>
+  <script src="/assets/js-files/index.js"></script>
+</script>
 </body>
 </html>

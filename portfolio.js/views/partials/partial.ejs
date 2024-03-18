@@ -1,0 +1,51 @@
+<% if (head === false) {
+  %>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css-files/index.css">
+  <link rel="stylesheet" href="/assets/css-files/common.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js'
+    crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-ABC123..." crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+  <% } %>
+  
+  
+<% if (nav) {
+  %>
+
+  <div class="navbar">
+    <div class="initial">
+      <img src="/assets/images/image-2.png.jpg"
+      alt="image of nwigiri from 2024">
+    </div>
+
+    <div class="theme">
+      <i style="font-size:24px" class="fa">&#xf186;</i>
+    </div>
+
+    <div class="dropdown" id="burger-container" onclick="toggleDropdown()">
+      <div id="burger">
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+      </div>
+
+      <div class="dropdown-content">
+        <a href="/" onclick="closeDropdown()">-Home-</a>
+        <a href="/blog" onclick="closeDropdown()">-Blog-</a>
+        <a href="/resume" onclick="closeDropdown()">-Resume-</a>
+        <a href="#contact-me" onclick="closeDropdown()">-Contact-</a>
+      </div>
+    </div>
+  </div>
+  <% } %>
