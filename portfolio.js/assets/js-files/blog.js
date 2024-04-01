@@ -27,3 +27,12 @@ document.addEventListener('DOMContentLoaded', function() {
     blogPosts.appendChild(article);
   });
 });
+
+
+//Burger nav toggle
+$(document).ready(function() {
+  $("#burger-container").on('click', function() {
+    $(this).toggleClass("open");
+    console.log(5);
+  });
+});

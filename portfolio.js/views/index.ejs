@@ -3,10 +3,10 @@
 <head>
   <title>Nwigiri Joshua port-folio</title>
   <%- include('partials/head') %>
-
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    <%- include('partials/nav_dropdown') %>
+  <%- include('partials/nav_dropdown') %>
 
   <!--alias and social accounts-->
   <div class="section-1-overall">
@@ -77,8 +77,7 @@
 
       <section class="section-3" id="section3">
         <h1><i style='font-size:50px;' class='fas'>&#xf7d9;</i>STACKS</h1>
-
-
+        <!-- Logos are attached here from js-->
 
       </section>
 
@@ -121,11 +120,11 @@
       <input type="submit" id="submit" value="Send">
     </form>
   </footer>
-  <br>
-  <span class="copyright">
-    <i class='fas' style="float:center;">&#xf1f9;</i><br><br>2023 | All Rights Reserved<br>
-    Designed & Built by Nwigiri
-  </span>
+
+
+  <%- include('partials/copyright') %>
+
+
   <br>
   <br>
 
@@ -134,7 +133,38 @@
 
   <!--div pop up on message success-->
   <div id="popup" class="popup"></div>
+  <!--<script src="/assets/js-files/DOM.js"></script>-->
+
+  <script>
+      let screenWidth = window.innerWidth;
+      let targetWidth = 480;
+
+      if (screenWidth < targetWidth) {
+        // Initialize ScrollReveal
+        ScrollReveal().reveal('.tools-logo', {
+          delay: 500,
+          duration: 1000,
+          origin: 'bottom',
+          distance: '50px',
+          easing: 'cubic-bezier(0.5, 0, 0, 1)',
+          reset: true
+        });
+      }
+
+
+      const elements = document.querySelectorAll('.tools-logo');
+      const pTag = document.querySelector('.ptag');
+      elements.forEach(function(el) {
+        el.addEventListener('click', function() {
+          elements.forEach(function(item) {
+            if (item !== el) {
+              item.classList.remove('zoomed');
+            }
+          });
+          el.classList.toggle('zoomed');
+        });
+      });
+  </script>
   <script src="/assets/js-files/index.js"></script>
-</script>
 </body>
 </html>

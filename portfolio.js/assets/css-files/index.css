@@ -15,6 +15,11 @@
   /*light theme*/
 }
 
+/*scroll reveal utility*/
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 .initial {
   background-color: var(--gold) /*gold*/;
   width: 2em;
@@ -318,20 +323,17 @@ span p {
 
 
 
-.tooltip {
+/*.tooltip {
   position: relative;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: black;
-  color: #fff;
+  color: white;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-  
-  
   position: absolute;
   z-index: 999;
   top: 100%;
@@ -340,7 +342,7 @@ span p {
 }
 .tooltip:hover .tooltiptext {
   visibility: visible;
-}
+}*/
 
 
 
@@ -464,6 +466,10 @@ textarea {
   justify-content: center;
   align-items: center;
   line-height: 30px;
+  flex-wrap:wrap;
+}
+.copyright .fas{
+  display: block;
 }
 /*back to top button*/
 #back-to-top {

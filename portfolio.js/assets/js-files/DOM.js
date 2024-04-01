@@ -40,25 +40,16 @@ for (let i = 0; i < icons.length; i++) {
   const P = document.createElement('p');
   P.textContent = paragraphs[i];
 
+  const toolTipText = document.createElement('span');
 
 
   const Span = document.createElement('span');
-
-
   Span.classList.add('tools-logo');
   Span.appendChild(icon);
   Span.appendChild(P);
+
   section_3.appendChild(Span);
 };
-
-/*let spanList = document.getElementsByClassName('tools-logo');
-for (let i = 0; i < spanList.length; i++) {
-  if (i % 2 != 0) {
-    spanList[i].classList.add('right');
-  } else {
-    spanList[i].classList.add('left');
-  }
-}*/
 
 //zoomout for the tools-logo
 document.addEventListener('DOMContentLoaded', function() {
@@ -87,6 +78,8 @@ function scrollFunction() {
     document.getElementById("back-to-top").style.display = "none";
   }
 }
+
+
 //stacks p tag display
 function toggleVisibility(index) {
   const spans = document.querySelectorAll('.tools-logo');
