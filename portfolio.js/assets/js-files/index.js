@@ -33,7 +33,7 @@ const colors = [
   "#61DAFB"
   
 ];
-const section_3 = document.getElementById('section3');
+const section_3 = document.getElementById('stacks');
 
 for (let i = 0; i < icons.length; i++) {
   const icon = document.createElement('i');
