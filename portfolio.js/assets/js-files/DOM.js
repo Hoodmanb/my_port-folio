@@ -1,5 +1,5 @@
 //DOM
-const icons = [
+/*const icons = [
   "&#xf13b;",
   "&#xf3d3;",
   "&#xf13c;",
@@ -35,7 +35,8 @@ for (let i = 0; i < icons.length; i++) {
   const icon = document.createElement('i');
   icon.classList.add('fab');
   icon.style.color = colors[i];
-  icon.innerHTML = icons[i];
+  icon.innerHTML =
+  icons[i];k
 
   const P = document.createElement('p');
   P.textContent = paragraphs[i];
@@ -215,4 +216,4 @@ form.addEventListener('submit', async function(event) {
   } catch (error) {
     console.error('Error:', error);
   }
-});
+});*/

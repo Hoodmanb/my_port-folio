@@ -7,7 +7,8 @@ const icons = [
   "&#xf1d2;",
   "&#xf17c;",
   "&#xf419;",
-  "&#xf3e2;"
+  "&#xf3e2;",
+  "&#xf41b;"
 ];
 const paragraphs = [
   "HTML 5",
@@ -17,7 +18,8 @@ const paragraphs = [
   "GIT",
   "LINUX",
   "NODE.JS",
-  "PYTHON"
+  "PYTHON",
+  "REACT"
 ];
 const colors = [
   "#E44D26",
@@ -27,7 +29,9 @@ const colors = [
   "#000000",
   "#8BC500",
   "#68A063",
-  "#306998"
+  "#306998",
+  "#61DAFB"
+  
 ];
 const section_3 = document.getElementById('section3');
 

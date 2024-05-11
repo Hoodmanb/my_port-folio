@@ -11,13 +11,14 @@
   --footer_text: #708090;
   --border: #C5C1C1;
   --black: black;
+  --grey: grey;
 
   /*light theme*/
 }
 
 /*scroll reveal utility*/
 html.sr .load-hidden {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .initial {
@@ -323,27 +324,6 @@ span p {
 
 
 
-/*.tooltip {
-  position: relative;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  color: white;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 999;
-  top: 100%;
-  left: 50%;
-  margin-left: -60px;
-}
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}*/
-
 
 
 
@@ -422,7 +402,8 @@ footer button {
 .input::placeholder {
   font-weight: bold;
   font-size: 1.3em;
-  padding-left: 5px;
+  padding-left: 2px;
+  color: var(--white);
 }
 .message {
   margin-top: 35px;
@@ -436,19 +417,38 @@ footer button {
   width: 70%;
 }
 form input {
-  padding: 15px;
+  padding: 20px;
   font-size: 0.8em;
-  font-weight: 500;
+  font-weight: 600;
+  background-color: var(--grey);
+  text-decoration: none;
+  color: var(--white);
 }
 textarea {
   border-radius: 10px;
   width: 70%;
   margin: 25px;
   padding: 10px;
-  font-size: 0.8em;
-  font-weight: 500;
+  padding-left: 20px;
+  font-size: 1em;
+  font-weight: 900;
   resize: none;
+  background-color: var(--grey);
+  color: var(--white);
 }
+
+.input {
+  background-color: var(--grey);
+  color: var(--white);
+}
+.input:focus,
+textarea:focus {
+  background-color: var(--white);
+  color: var(--grey);
+  border: 2px solid green !important;
+  text-decoration: none !important;
+}
+
 #submit {
   width: 30%;
   height: 40px;
@@ -458,6 +458,8 @@ textarea {
   border: none;
   float: left;
   margin-left: 15%;
+  padding-top: 0.8em;
+  color: var(--black);
 }
 
 /*span:last-of-type*/
@@ -466,9 +468,9 @@ textarea {
   justify-content: center;
   align-items: center;
   line-height: 30px;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
-.copyright .fas{
+.copyright .fas {
   display: block;
 }
 /*back to top button*/
@@ -565,24 +567,3 @@ textarea {
     top: 35%;
   }
 }
-
-/*@keyframes swing {
-  0% {
-    transform: translateY(50%) rotateZ(0deg);
-  }
-  40% {
-    transform: translateY(50%) rotateZ(90deg);
-    right: 25%;
-    left: 25%;
-  }
-  70% {
-    transform: translateY(50%) rotateZ(70deg);
-    right: 25%;
-    left: 25%;
-  }
-  100% {
-    transform: translateY(50%) rotateZ(75deg);
-    right: 25%;
-    left: 25%;
-  }
-}*/

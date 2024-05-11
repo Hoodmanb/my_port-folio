@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>Nwigiri Joshua port-folio</title>
-    <%- include('partials/head') %>
+    <%- head %>
   <link rel="stylesheet" href="/assets/css-files/blog.css">
 </head>
 <body>
-      <%- include('partials/nav_dropdown') %>
+      <%- dropdown %>
 
   <!--<header class="about blog"><i style='font-size:24px' class='fas'>&#xf5ac;</i>Blog</header>-->
 
@@ -30,10 +30,18 @@
 
     </div>
     <section id="blog-posts">
+      <% blogs.forEach(blog => { %>
+      <article class="post" >
+        <h4> <%= blog.topic %> </h4>
+        <h6> <%= blog._date %> &nbsp;&nbsp; </h6>
+        <h6>&nbsp;&nbsp; <%= blog.name %> </h6>
+        <p> <%= blog.body %> </p>
+      </article>
+      <% }) %>
 
     </section>
   
-  <%- include('partials/copyright') %>
+  <%- copyright %>
   </main>
 
   <script src="/assets/js-files/index.js"></script>
