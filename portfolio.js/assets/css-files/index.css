@@ -23,8 +23,7 @@ html.sr .load-hidden {
 
 .initial {
   background-color: var(--gold)
-    /*gold*/
-  ;
+  /*gold*/;
   width: 2em;
   border-radius: 50px;
   height: 2em;
@@ -42,18 +41,17 @@ html.sr .load-hidden {
 
 .initial::after {
   content:
-    /*'\00a0Nwigiri'*/
-    'Nwigiri';
+  /*'\00a0Nwigiri'*/
+  'Nwigiri';
   position: absolute;
   left: 95%;
   background-color: gold;
   border-radius: 0 10px 10px 0;
   background-color: var(--initial)
-    /*rgb(30, 34, 53)*/
-  ;
+  /*rgb(30, 34, 53)*/;
   width:
-    /*3.5em*/
-    auto;
+  /*3.5em*/
+  auto;
   font-weight: bold;
   padding: 1.2px 5px;
 
@@ -139,8 +137,7 @@ html.sr .load-hidden {
   top: 40px;
   border-radius: 10px;
   background-color: var(--initial)
-    /*rgb(30, 34, 53)*/
-  ;
+  /*rgb(30, 34, 53)*/;
   display: none;
 }
 
@@ -159,8 +156,7 @@ html.sr .load-hidden {
 
 a {
   color: var(--body_color)
-    /*rgb(197, 193, 193)*/
-  ;
+  /*rgb(197, 193, 193)*/;
 }
 
 /*section 1*/
@@ -169,8 +165,8 @@ a {
   text-align: center;
   font-weight: bold;
   background-color:
-    /*#262626*/
-    var(--sec_bg);
+  /*#262626*/
+  var(--sec_bg);
   padding: 10px;
 }
 
@@ -238,8 +234,8 @@ button:active,
 /*section 2*/
 .section-2-overall {
   background-color:
-    /*rgb(74, 68, 87)*/
-    var(--body_back);
+  /*rgb(74, 68, 87)*/
+  var(--body_back);
   padding: 20px;
   top: 0;
   text-align: center;
@@ -261,8 +257,7 @@ button:active,
   font-weight: normal;
   margin-bottom: 35px;
   color: var(--name_color)
-    /*#DCDCDC8*/
-  ;
+  /*#DCDCDC8*/;
   font-family: "Gill Sans", sans-serif;
 }
 
@@ -280,12 +275,11 @@ button:active,
 /*project cards*/
 .projects {
   background-color: var(--initial)
-    /*rgb(30, 34, 53)*/
-  ;
+  /*rgb(30, 34, 53)*/;
   width: 80%;
   height:
-    /*350px*/
-    auto;
+  /*350px*/
+  auto;
   margin: auto;
   margin-top: 20px;
   border-radius: 10px;
@@ -314,8 +308,7 @@ button:active,
 
 .description h5 b {
   background-color: var(--body_back)
-    /*rgb(74, 68, 87)*/
-  ;
+  /*rgb(74, 68, 87)*/;
   border-radius: 5px;
   display: inline-block;
   margin: 4px 4px 4px 0px;
@@ -359,8 +352,8 @@ button:active,
 
 .section-3 .fa,
 .section-3 .fab {
-  font-size: 110px;
-  margin-top: 60px;
+  font-size: 4em;
+  margin-top: 50px;
 }
 
 .section-3 span {
@@ -380,49 +373,15 @@ span p {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .zoomed {
-  transform: scale(1.2);
+  transform: scale(0.8);
 }
 
 footer {
   background-color: var(--initial)
-    /*rgb(30, 34, 53)*/
-  ;
+  /*rgb(30, 34, 53)*/;
   color: var(--footer_text)
-    /*#708090*/
-  ;
+  /*#708090*/;
   width: 90%;
   margin: auto;
   text-align: center;
@@ -567,8 +526,7 @@ textarea:focus {
   color: goldenrod;
   animation: moveUpDown 1s ease-in infinite alternate;
   border: 2px solid var(--border)
-    /*#C5C1C1*/
-  ;
+  /*#C5C1C1*/;
   border-radius: 100px;
   padding: 2px;
 }
@@ -627,7 +585,7 @@ textarea:focus {
   text-align: center;
   transform-origin: 10px 10px;
   animation: drop 1.5s ease both,
-    hinge 2s 2.5s ease both;
+  hinge 2s 2.5s ease both;
   /*swing 2s 2.5s ease both;*/
 }
 
@@ -774,16 +732,3 @@ textarea:focus {
   #hire {
     margin-top: 700px;
   }
-
-
-
-
-
-
-
-  .social-acc a i {}
-
-  form {}
-
-
-}

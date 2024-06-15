@@ -1,68 +1,55 @@
 //DOM
 const icons = [
-  "&#xf13b;",
-  "&#xf3d3;",
-  "&#xf13c;",
-  "&#xf09b;",
-  "&#xf1d2;",
-  "&#xf17c;",
-  "&#xf419;",
-  "&#xf3e2;",
-  "&#xf41b;"
+  ["&#xf13b;", "&#xf3d3;", "&#xf13c;", "&#xf41b;"],
+  ["&#xf09b;", "&#xf1d2;"],
+  ["&#xf419;", "&#xf3e2;"],
+  ["&#xf17c;"]
 ];
+
 const paragraphs = [
-  "HTML 5",
-  "JAVASCRIPT",
-  "CSS 3",
-  "GIT-HUB",
-  "GIT",
-  "LINUX",
-  "NODE.JS",
-  "PYTHON",
-  "REACT"
+  ["HTML 5", "JAVASCRIPT", "CSS 3", "REACT"],
+  ["GIT-HUB", "GIT"],
+  ["NODE.JS", "PYTHON"],
+  ["LINUX"]
 ];
+
 const colors = [
-  "#E44D26",
-  "#F7DF1E",
-  "#1572B6",
-  "#000000",
-  "#000000",
-  "#8BC500",
-  "#68A063",
-  "#306998",
-  "#61DAFB"
-  
+  ["#E44D26", "#F7DF1E", "#1572B6", "#61DAFB"],
+  ["#000000", "#000000"],
+  ["#68A063", "#306998"],
+  ["#8BC500"]
 ];
-const section_3 = document.getElementById('stacks');
+
+const spec = ['Web Development ', 'Version Control', 'Backend', 'Emulator']
 
 for (let i = 0; i < icons.length; i++) {
-  const icon = document.createElement('i');
-  icon.classList.add('fab');
-  icon.style.color = colors[i];
-  icon.innerHTML = icons[i];
+  let specHeader = $('<h2>', {
+    text: spec[i],
+    style: 'margin: 30px auto -20px auto;'
+  });
 
-  const P = document.createElement('p');
-  P.textContent = paragraphs[i];
+  $('#stacks').append(specHeader);
 
+  for (let j = 0; j < icons[i].length; j++) {
+    let icon = $('<i>', {
+      class: 'fab',
+      style: `color:${colors[i][j]};`,
+      html: icons[i][j]
+    });
 
+    let P = $('<p>', {
+      text: paragraphs[i][j]
+    });
 
-  const Span = document.createElement('span');
+    let Span = $('<span>', {
+      class: 'tools-logo',
+      html: icon.add(P)
+    });
 
-
-  Span.classList.add('tools-logo');
-  Span.appendChild(icon);
-  Span.appendChild(P);
-  section_3.appendChild(Span);
-};
-
-/*let spanList = document.getElementsByClassName('tools-logo');
-for (let i = 0; i < spanList.length; i++) {
-  if (i % 2 != 0) {
-    spanList[i].classList.add('right');
-  } else {
-    spanList[i].classList.add('left');
+    $('#stacks').append(Span);
   }
-}*/
+}
+
 
 //zoomout for the tools-logo
 document.addEventListener('DOMContentLoaded', function() {
