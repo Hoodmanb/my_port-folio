@@ -1,45 +1,44 @@
-const expressAsyncHandler = require("express-async-handler");
-const nodemailer = require("nodemailer");
+const nodemailer = require('nodemailer')
 
+const sendMail = (req, res) => {
+    const {
+        name,
+        email,
+        message
+    } = req.body
+    //console.log(name, email, message)
+    const transporter = nodemailer.createTransport({
+        //service: 'gmail',
+        host: 'smtp.gmail.com',
+        port: 465,
+        //secure: true,
+        auth: {
+            user: process.env.SENDING_EMAIL,
+            pass: process.env.EMAIL_PASSWORD
+        }
+    })
+    //console.log(transporter)
+    const text = Object.keys(req.body)
+    .map(key => `${key}: ${req.body[key]}`)
+    .join('\n');
 
-const express = require('express');
-const app = express();
-
-const sendMail = expressAsyncHandler(async (req, res) => {
-  const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    auth: {
-      user: process.env.from_mail,
-      pass: process.env.app_pass
+    const mailOptions = {
+        to: process.env.RECIECING_EMAIL,
+        from: email,
+        subject: 'What i think about your port-folio',
+        text: text
     }
-  });
-
-  const from_mail = req.body.from;
-  const subject = "What I Think About Your Port-folio";
-  const text = Object.keys(req.body)
-  .map(key => `${key}: ${req.body[key]}`)
-  .join('\n');
-
-  const mail = {
-    from: process.env.from_mail,
-    to: process.env.mail_reciv,
-    subject: subject,
-    text: text
-  };
-  
-  transporter.sendMail(mail, (error, info) => {
-    if (error) {
-      console.error('Error occurred:', error);
-      res.redirect('/?status=error'); // Redirect with error status
-    } else {
-      console.log('Email sent:', info.response);
-      res.redirect('/?status=success'); // Redirect with success status
-    }
-  });
-});
-
-
-
+    //console.log(mailOptions)
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.error(error)
+            return res.status(500).send(error.toString());
+        }
+        console.log(info)
+        res.status(200).send({
+            message: 'successful!'
+        });
+    });
+}
 
 module.exports = sendMail;
