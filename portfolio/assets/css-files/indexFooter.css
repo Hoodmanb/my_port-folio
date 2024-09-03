@@ -1,0 +1,138 @@
+footer {
+  background-color: var(--initial);
+  color: var(--footer_text);
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  border-radius: 15px;
+  padding: 30px;
+  padding-bottom: 70px;
+  margin-bottom: 30px;
+}
+
+footer h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+footer button {
+  background-color: var(--goldenrod);
+  color: var(--black);
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.social-acc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-acc a i {
+  font-size: 1.5em;
+  margin: auto 10px;
+}
+
+.send-msg {
+  margin-bottom: 5px;
+  text-align: right;
+  word-spacing: -5px;
+  letter-spacing: -1px;
+}
+
+.send-msg::after {
+  content: '📩';
+  animation: blink 1s infinite alternate;
+  font-size: 1.3em;
+  margin: auto;
+}
+
+
+.input::placeholder {
+  font-weight: bold;
+  font-size: 1.3em;
+  padding-left: 2px;
+  color: var(--white);
+}
+
+.message {
+  margin-top: 35px;
+  margin-left: 45px;
+}
+
+#name,
+#email {
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+form input {
+  padding: 20px;
+  font-size: 0.8em;
+  font-weight: 600;
+  background-color: var(--grey);
+  text-decoration: none;
+  color: var(--white);
+}
+
+textarea {
+  border-radius: 10px;
+  width: 70%;
+  margin: 25px;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 1em;
+  font-weight: 900;
+  resize: none;
+  background-color: var(--grey);
+  color: var(--white);
+}
+
+.input {
+  background-color: var(--grey);
+  color: var(--white);
+}
+
+.input:focus,
+textarea:focus {
+  background-color: var(--white);
+  color: var(--grey);
+  border: 2px solid green !important;
+  text-decoration: none !important;
+}
+
+#submit {
+  width: 30%;
+  height: 40px;
+  border-radius: 10px;
+  font-weight: 900;
+  background-color: var(--goldenrod);
+  border: none;
+  float: left;
+  margin-left: 15%;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*span:last-of-type*/
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  flex-wrap: wrap;
+}
+
+.copyright .fas {
+  display: block;
+}

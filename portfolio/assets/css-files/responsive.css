@@ -1,0 +1,100 @@
+/*responsiveness*/
+@media (min-width:575px) {
+  .btn-and-img {
+    width: 50%;
+  }
+
+  .-about {
+    display: none;
+  }
+
+  .closing-about {
+    position: absolute;
+    top: 30px;
+    width: 50%;
+    right: 18px;
+  }
+
+  .closing-about p {
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .social-acc a i {
+    font-size: 2em;
+    margin: auto 5px;
+  }
+
+  form {
+    margin-left: -70px;
+  }
+
+  #hire {
+    padding-left: 40px;
+  }
+
+  .file {
+    position: relative;
+    left: 20%;
+  }
+
+}
+
+@media(min-width:700px) {
+  .section-3 span {
+    display: inline-block;
+    width: 30%;
+  }
+}
+
+@media(min-width:920px) {
+  .my-name {
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  .projects {
+    width: 30%;
+    float: right;
+    margin-right: 20px;
+  }
+
+  .section-2-overall {
+    padding: 40px;
+    width: 100%;
+  }
+
+  .file {
+    text-align: right;
+  }
+
+  .section-3 h1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+  .section-3 {
+    top: 150px;
+  }
+
+
+  #stacks {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    margin-left: 40px;
+  }
+
+  .tools-logo {
+    padding: 10px;
+  }
+
+  #hire {
+    margin-top: 150px;
+    width: 70%;
+  }
+}
+
+@media(min-width:920px) {}
