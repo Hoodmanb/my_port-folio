@@ -27,9 +27,13 @@ const projects = require('./db/projects.json')
 
 
 //ejs as view engine
-expApp.set("view engine", "ejs");
+// expApp.set("view engine", "ejs");
 //assets folder for static files
-expApp.use("/assets", express.static("assets"));
+// expApp.use("/assets", express.static("assets"));
+
+expApp.use('/assets', express.static(path.join(__dirname, 'assets')));
+expApp.set('views', path.join(__dirname, 'views'));
+expApp.set('view engine', 'ejs');
 
 expApp.get("/", function (request, res) {
     res.render("index", {
