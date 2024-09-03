@@ -2,6 +2,7 @@
 const express = require("express");
 const sendMail = require("./controller/control.js");
 const bodyParser = require("body-parser");
+const path = require("path");
 
 const port = 7000;
 const host = "127.0.0.1";
@@ -61,6 +62,12 @@ expApp.post("/sendmail", sendMail);
 expApp.use((req, res, next) => {
     res.status(404).render('404');
 })
+
+expApp.use((err, req, res, next) => {
+    console.error('Error:', err.stack);
+    console.error('Message:', err.message);
+    //res.status(500).render('500'); // Assuming you have a 500 error template
+});
 
 expApp.listen(port);
 console.log(`Access Server On http://${host}:${port}`);
