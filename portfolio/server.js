@@ -64,3 +64,5 @@ expApp.use((req, res, next) => {
 
 expApp.listen(port);
 console.log(`Access Server On http://${host}:${port}`);
+
+module.exports = expApp;
