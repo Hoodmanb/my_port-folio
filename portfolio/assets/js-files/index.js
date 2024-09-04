@@ -2,25 +2,22 @@
 const icons = [
     ["&#xf13b;", "&#xf3d3;", "&#xf13c;", "&#xf41b;"],
     ["&#xf09b;", "&#xf1d2;"],
-    ["&#xf419;", "&#xf3e2;"],
-    ["&#xf17c;"]
+    ["&#xf419;", "&#xf3e2;"]
 ];
 
 const paragraphs = [
     ["HTML 5", "JAVASCRIPT", "CSS 3", "REACT"],
     ["GIT-HUB", "GIT"],
-    ["NODE.JS", "PYTHON"],
-    ["LINUX"]
+    ["NODE.JS", "PYTHON"]
 ];
 
 const colors = [
     ["#E44D26", "#F7DF1E", "#1572B6", "#61DAFB"],
     ["#000000", "#000000"],
-    ["#68A063", "#306998"],
-    ["#8BC500"]
+    ["#68A063", "#306998"]
 ];
 
-const spec = ['Web Development ', 'Version Control', 'Backend', 'Emulator']
+const spec = ['Web Development ', 'Version Control', 'Backend']
 
 for (let i = 0; i < icons.length; i++) {
     let specHeader = $('<h2>', {

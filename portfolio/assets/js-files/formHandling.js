@@ -50,6 +50,7 @@ if (form) {
       body: JSON.stringify(data),
     })
       .then(response => {
+        form.reset()
         if (!response.ok) {
           submit.innerHTML = `Send ${sendIcon}`
           messageInfo('block', `${errorIcon} <p>Not sent, Try Again!</P>`, 'error', 'show')

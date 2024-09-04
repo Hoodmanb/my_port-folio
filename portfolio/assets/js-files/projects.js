@@ -47,7 +47,7 @@ document.addEventListener('dataLoaded', function () {
 
     span1.classList.add('source');
 
-    let a = `<a href= ${projectData.description.source.a} class="first"><i class="fab" style="font-size:30px;">&#xf092;</i></a>`;
+    let a = `<a href= ${projectData.description.source.a} class="first" target="_blank"><i class="fab" style="font-size:30px;">&#xf092;</i></a>`;
     let a1 = `<a href= ${projectData.description.source.a1} class="second"><i class='fas' style="font-size:30px;">&#xf0c1;</i></a>`;
 
     span1.innerHTML = a + a1;

@@ -1,20 +1,20 @@
 [
   {
     "image": {
-      "url": "/assets/images/image-2.png.jpg",
-      "alt": "image of nwigiri from 2023"
+      "url": "https://firebasestorage.googleapis.com/v0/b/personal-projects-adf38.appspot.com/o/nwigiri%2FScreenshot_20240904-015041.jpg?alt=media&token=fa53f3cd-467d-4667-b80f-e53ed02b596a",
+      "alt": "a screenshot of my portfolio homepage"
     },
     "description": {
       "h5": "MY PORT-FOLIO",
       "p": "Nwigiri's port-folio",
-      "h6": "By: NWIGIRI",
+      "h6": "By: Nwigiri",
       "h51": {
-        "tools": "TOOLS USED:",
-        "list": "HTML CSS JAVASCRIPT GOOGLE-FONTS"
+        "tools": "Tools Used: ",
+        "list": "HTML CSS JavaScript Node.js Express.js EJS NodeMailer"
       },
       "source": {
-        "a": "#",
-        "a1": "#"
+        "a": "https://my-port-folio-nwigiri-joshuas-projects.vercel.app",
+        "a1": "https://github.com/Hoodmanb/my_port-folio"
       }
     }
   },
